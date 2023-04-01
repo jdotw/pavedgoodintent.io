@@ -3,4 +3,4 @@ const { post } = Astro.props;
 ---
 
 <p class="text-xs text-neutral-400">Season {post.data.season} Episode {post.data.episode}</p>
-<p class="text-jw"><a href=`https://www.youtube.com/watch?v=${post.data.youtube_id}&list=${post.data.youtube_list}`>{post.data.title}</a></p>
+<p class="text-jw text-lg font-normal sm:font-light"><a href=`https://www.youtube.com/watch?v=${post.data.youtube_id}&list=${post.data.youtube_list}`>{post.data.title}</a></p>
