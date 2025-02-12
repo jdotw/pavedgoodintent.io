@@ -1,4 +1,4 @@
-import { image, z, defineCollection } from "astro:content";
+import { z, defineCollection } from "astro:content";
 const episodesCollection = defineCollection({
   schema: z.object({
 	season: z.number(),
