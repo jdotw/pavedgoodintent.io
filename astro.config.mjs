@@ -1,11 +1,13 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import image from "@astrojs/image";
 import mdx from "@astrojs/mdx";
+
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
-  }), mdx()],
+  integrations: [mdx()],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

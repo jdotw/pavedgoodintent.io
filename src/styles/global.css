@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C700%2C900%2C100italic%2C300italic%2C400italic%2C700italic%2C900italic%7CMontserrat%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7COswald%3A200%2C300%2C400%2C500%2C600%2C700%7CPlayfair+Display%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic&amp;ver=1590029356');
+
+@import "tailwindcss";
+
+@theme {
+    --font-oswald: "Oswald", sans-serif;
+    --font-lato: "Lato", sans-serif;
+    --color-jw: #FF0B41;
+}
+
+@layer base {
+    body {
+        font-family: 'Helvetica', 'Arial', sans-serif;
+    }
+}
+
+
+@layer components {
+    .hero-heading-1 {
+        @apply font-oswald text-4xl min-[500px]:text-5xl text-right leading-tight
+    }
+
+    .hero-heading-2 {
+        @apply font-oswald text-2xl text-right leading-tight
+    }
+
+    .heading-1 {
+        @apply font-oswald text-7xl leading-tight
+    }
+
+    .heading-2 {
+        @apply font-oswald text-6xl leading-tight
+    }
+
+    .heading-3 {
+        @apply font-oswald text-4xl leading-tight
+    }
+
+    .heading-4 {
+        @apply font-oswald text-2xl leading-tight
+    }
+
+    .heading-5 {
+        @apply font-oswald text-xl leading-tight
+    }
+
+    .link-navbar {
+        @apply font-oswald text-lg leading-tight
+    }
+
+    .text-1 {
+        @apply font-lato text-base font-light
+    }
+}
