@@ -17,11 +17,11 @@
 
 @layer components {
     .hero-heading-1 {
-        @apply font-oswald text-4xl min-[500px]:text-5xl text-right leading-tight
+        @apply font-oswald text-4xl min-[500px]:text-5xl text-left leading-tight
     }
 
     .hero-heading-2 {
-        @apply font-oswald text-2xl text-right leading-tight
+        @apply font-oswald text-2xl text-left leading-tight text-jw
     }
 
     .heading-1 {
